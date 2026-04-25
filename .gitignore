@@ -1,0 +1,30 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+cvxenv/
+myenv/
+
+# JetBrains and VS Code
+.vscode/
+.idea/
+
+# Python package directories
+pip-wheel-metadata/
+*.egg-info/
+
+# Logs and runtime files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/

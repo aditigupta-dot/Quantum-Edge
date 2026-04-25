@@ -1,0 +1,75 @@
+/* css/variables.css — Design tokens */
+
+:root {
+  /* ── Dark mode palette (default) ── */
+  --bg:       #06070f;
+  --bg2:      #0d0f1e;
+  --bg3:      #111327;
+  --panel:    #151729;
+  --panel2:   #1a1e35;
+  --border:   #232744;
+  --border2:  #2d3358;
+
+  /* ── Accent colors ── */
+  --accent:   #4f8dff;
+  --accent2:  #7c5cfc;
+  --accent3:  #00e5b0;
+  --accent4:  #ff6b6b;
+  --gold:     #ffd700;
+
+  /* ── Semantic colors ── */
+  --green:    #00e5b0;
+  --red:      #ff5555;
+  --amber:    #ffb830;
+  --blue:     #4f8dff;
+  --purple:   #a78bfa;
+  --teal:     #00e5b0;
+
+  /* ── Text ── */
+  --text:     #e8eaf6;
+  --text2:    #9ba3c7;
+  --text3:    #5a6282;
+  --text4:    #3b4168;
+
+  /* ── Typography ── */
+  --font-sans: 'Sora', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* ── Sizes ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --sidebar-w: 300px;
+  --navbar-h:  56px;
+  --statusbar-h: 32px;
+
+  /* ── Shadows ── */
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md:  0 4px 20px rgba(0,0,0,0.4);
+  --shadow-glow-blue:   0 0 20px rgba(79,141,255,0.2);
+  --shadow-glow-purple: 0 0 20px rgba(124,92,252,0.2);
+  --shadow-glow-teal:   0 0 20px rgba(0,229,176,0.15);
+
+  /* ── Transitions ── */
+  --transition: 0.2s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* ── Light mode overrides ── */
+body.light-mode {
+  --bg:      #f0f2f8;
+  --bg2:     #e8eaf4;
+  --bg3:     #f5f6fd;
+  --panel:   #ffffff;
+  --panel2:  #f0f2fb;
+  --border:  #d0d4e8;
+  --border2: #b8bdd8;
+  --text:    #1a1e35;
+  --text2:   #4a5280;
+  --text3:   #8890b0;
+  --text4:   #b0b8d4;
+  --accent3: #009f7c;
+  --green:   #009f7c;
+  --teal:    #009f7c;
+}

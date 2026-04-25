@@ -1,0 +1,140 @@
+/* css/charts.css — Chart wrappers & quantum circuit */
+
+.chart-wrap {
+  position: relative;
+  width: 100%;
+}
+
+/* ══ QUANTUM CIRCUIT ══ */
+.circuit-container {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  overflow-x: auto;
+  margin-bottom: 12px;
+}
+.circuit-row {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  white-space: nowrap;
+  min-height: 28px;
+}
+.circuit-qubit-label {
+  width: 36px;
+  font-size: 10px;
+  color: var(--text3);
+  flex-shrink: 0;
+}
+.circuit-wire-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 28px;
+}
+.circuit-wire {
+  position: absolute;
+  left: 0; right: 0;
+  top: 50%;
+  height: 1px;
+  background: var(--border2);
+}
+.gate {
+  position: relative;
+  z-index: 1;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  margin: 0 4px;
+  border: 1px solid;
+  flex-shrink: 0;
+}
+.gate-H    { background: rgba(79,141,255,0.15);  border-color: rgba(79,141,255,0.5);  color: #7ab3ff; }
+.gate-Rx   { background: rgba(124,92,252,0.15);  border-color: rgba(124,92,252,0.5);  color: #a78bfa; }
+.gate-Rz   { background: rgba(255,184,48,0.12);  border-color: rgba(255,184,48,0.35); color: var(--amber); }
+.gate-CNOT { background: rgba(0,229,176,0.1);    border-color: rgba(0,229,176,0.3);   color: var(--accent3); }
+.gate-M    { background: rgba(255,215,0,0.1);    border-color: rgba(255,215,0,0.3);   color: var(--gold); }
+.gate-ctrl { background: transparent; border: none; padding: 0; margin: 0 6px; }
+.ctrl-dot {
+  display: inline-block;
+  width: 9px; height: 9px;
+  background: var(--accent3);
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.circuit-legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.gate-legend {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid;
+  font-family: var(--font-mono);
+}
+.gate-h-leg    { background: rgba(79,141,255,0.1);  border-color: rgba(79,141,255,0.4);  color: #7ab3ff; }
+.gate-rx-leg   { background: rgba(124,92,252,0.1);  border-color: rgba(124,92,252,0.4);  color: #a78bfa; }
+.gate-cnot-leg { background: rgba(0,229,176,0.08);  border-color: rgba(0,229,176,0.3);   color: var(--accent3); }
+.gate-meas-leg { background: rgba(255,215,0,0.08);  border-color: rgba(255,215,0,0.3);   color: var(--gold); }
+
+/* ══ BLOCH SPHERES ══ */
+.bloch-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 8px 0;
+  margin-bottom: 12px;
+}
+.bloch-item { text-align: center; }
+.bloch-sphere {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  border: 1px solid var(--border2);
+  background: radial-gradient(circle at 38% 35%, var(--panel2), var(--bg));
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4px;
+  overflow: hidden;
+}
+.bloch-equator {
+  position: absolute;
+  width: 100%; height: 1px;
+  background: var(--border);
+  top: 50%; left: 0;
+}
+.bloch-meridian {
+  position: absolute;
+  width: 1px; height: 100%;
+  background: var(--border);
+  top: 0; left: 50%;
+}
+.bloch-arrow {
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(0deg, transparent, var(--accent));
+  transform-origin: 50% 100%;
+  bottom: 50%;
+  left: calc(50% - 1px);
+  border-radius: 1px;
+}
+.bloch-label { font-size: 9px; color: var(--text3); font-family: var(--font-mono); }
+
+.state-vector-display {
+  font-size: 10px;
+  color: var(--text2);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  line-height: 1.8;
+}
