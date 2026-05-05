@@ -1,0 +1,38 @@
+# Quantum Computing
+qiskit
+qiskit-ibm-runtime
+qiskit-aer
+qiskit-optimization
+qiskit-algorithms
+dwave-ocean-sdk
+pennylane
+pennylane-qiskit
+
+# Web Framework
+fastapi
+uvicorn[standard]
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+
+# Data & Finance
+yfinance
+alpha-vantage
+pandas
+numpy
+scipy
+
+# Optimization
+cvxpy
+dimod
+
+# Database
+sqlalchemy
+alembic
+aiosqlite
+
+# Utils
+python-dotenv
+httpx
+pydantic
+pydantic-settings
