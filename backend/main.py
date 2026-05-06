@@ -19,8 +19,7 @@ app.add_middleware(
 app.include_router(router, prefix="/api")
 
 # Serve frontend static files
-app.mount("/", StaticFiles(directory="../frontend", html=True), name="static")
-
+app.mount("/", StaticFiles(directory="../frontend", html=True, check_dir=False), name="static")
 @app.get("/health")
 def health():
     return {"status": "ok"}
